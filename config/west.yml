@@ -11,6 +11,9 @@ manifest:
     # nice_oled - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    # ZMK Locals
+    - name: zmk-locales
+      url-base: https://github.com/joelspadin/
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -35,6 +38,10 @@ manifest:
     # oled Adapter
     - name: zmk-oled-adapter
       remote: mctechnology17
+      revision: main
+    # ZMK Locals
+    - name: zmk-locales
+      remote: zmk-locales
       revision: main
   self:
     path: config
